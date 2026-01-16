@@ -10,14 +10,14 @@
 <nav>
     <h1 class="nav-heading">Mudasir Abbas</h1>
     <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Projects</a>
-        <a href="/">contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<header class="masthead">
+<header class="masthead" id="home">
     <div class="container">
         <div class="row">
             <div class="page-heading" style="text-align: center">
@@ -25,14 +25,14 @@
                 <h3 class="subtitle">Frontend Developer & UI Designer</h3>
                 <p>I build, responsive websites with clean code and modern<br> technologies. Passionate about creating
                     greater user <br>experience.</p>
-                <button class="work-btn  btn">View My Work</button>
-                <button class="contact-btn btn">Contact Me</button>
+                <button class="work-btn btn" id="viewWorkBtn">View My Work</button>
+                <button class="contact-btn btn" id="contactBtn">Contact Me</button>
             </div>
         </div>
     </div>
 </header>
 
-<section class="about-section">
+<section class="about-section" id="about">
     <div class="about">
         <h1>
             About Me
@@ -62,14 +62,109 @@
     </div>
 </section>
 
-<section class="project-section">
+<section class="project-section" id="projects">
+    <h1 class="project-heading">My Projects</h1>
+    <p class="project-subtitle">Check out some of my recent work</p>
     <div class="project-container">
-        <h1 class="project-heading" style="display: block">My Project</h1>
-        <div class="project project1"></div>
-        <div class="project project2"></div>
-        <div class="project project3"></div>
+        <div class="project project1">
+            <div class="project-image project-image1"></div>
+            <div class="project-content">
+                <h3>E-Commerce Platform</h3>
+                <p>A fully responsive e-commerce website built with HTML, CSS, and JavaScript. Features include product listings, shopping cart, and checkout functionality.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Demo</a>
+                    <a href="#" class="project-link">Source Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project project2">
+            <div class="project-image project-image2"></div>
+            <div class="project-content">
+                <h3>Weather Dashboard</h3>
+                <p>A weather application that displays current weather and forecasts using API integration. Built with modern JavaScript and responsive design principles.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">API</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Demo</a>
+                    <a href="#" class="project-link">Source Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project project3">
+            <div class="project-image project-image3"></div>
+            <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>A Flask-based task management system with user authentication, CRUD operations, and a clean user interface for organizing daily tasks.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">UI/UX</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Demo</a>
+                    <a href="#" class="project-link">Source Code</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <h1 class="contact-heading">Get In Touch</h1>
+        <p class="contact-subtitle">Have a project in mind? Let's work together!</p>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>📧 Email</h3>
+                <p>mudasir@example.com</p>
+            </div>
+            <div class="info-item">
+                <h3>📱 Phone</h3>
+                <p>+92 300 1234567</p>
+            </div>
+            <div class="info-item">
+                <h3>📍 Location</h3>
+                <p>Pakistan</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Twitter</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 Mudasir Abbas. All rights reserved.</p>
+</footer>
 
 <script src="index.js"></script>
 </body>
